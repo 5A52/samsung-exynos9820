@@ -58,8 +58,6 @@ jobs:
                        name="Cruel-5.3.3p"       \
                        toolchain=$TOOLCHAIN      \
                        -force_dex_wqhd           \
-                       -morosound                \
-                       +mass_storage             \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
