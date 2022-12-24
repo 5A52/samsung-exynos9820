@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 
 env:
   TOOLCHAIN: cruel
-  INSTALLER: no
+  INSTALLER: yes
 
 jobs:
   build:
@@ -58,7 +58,7 @@ jobs:
                        name="Cruel-5.3.3"        \
                        toolchain=$TOOLCHAIN      \
                        -force_dex_wqhd           \
-                       -morosound                \
+ 
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
